@@ -1,1 +1,1 @@
-# order-summary-component
+# frontend-mentor-p1

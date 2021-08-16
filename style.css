@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background-image:url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: 500%;
+    align-items: center;
+    justify-content: center;
+}
+.main_container{
+    width:90%;
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 30px hsl(245, 30%, 80%);
+}
+.hero_container{
+    width: 100%;
+    height: 40%;
+}
+.hero_image{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius:20px ;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+}
+.content_container{
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0 0;
+    font-size: 0.8em;
+}
+.content_heading,.content_para{
+    text-align: center;
+}
+.content_heading > h2{
+    font-weight: 900;
+    color: hsl(225, 90%, 15%);
+}
+.content_para{
+    padding: 1rem 0 1rem 1rem;
+    position: relative ;
+    align-items: center;
+    justify-content: center;
+}
+.content_para > p {
+    width: 90%;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.5em;
+}
+.content_price_container{
+    margin: 1rem 1.5rem;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    padding: 0 0.8rem;
+    border-radius: 10px;
+    font-size: 0.3em;
+    gap: 1rem;
+}
+.music_circle{
+    background-color: hsl(225, 100%, 94%);
+    height: 50px;
+    width: 20% !important;
+    border-radius: 50%;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.fas{
+    color: rgb(106, 110, 119);
+    font-size: 3.4em;
+    padding-top: 15px;
+    padding-right: 2px;
+}
+.content_details_container{
+    width: 80%;
+    display: flex;
+}
+.middle_contents{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 70%;
+    font-size: 1rem;
+    padding: 1.2rem 0 1rem 0;
+}
+.middle_contents>h3{
+    color: hsl(225, 90%, 15%);
+    padding-bottom: 3px;
+}
+.middle_contents > h4{
+    color: hsl(224, 23%, 55%);
+}
+.correction_btn{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.correction_btn > p{
+    height: 100%;
+    width: 100%;
+    font-size:15px ;
+    padding-top: 14px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+}
+.correction_btn>p:hover{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    cursor: pointer;
+}
+.content_proceed_btn{
+    margin: 0rem 1.5rem;
+    text-align: center ;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 15px 20px hsl(245, 60%, 80%);
+}
+.content_proceed_btn:hover{
+    background-color: hsl(245, 75%, 60%);
+    cursor: pointer;
+}
+.content_cancel{
+    margin: 1.5rem;
+    text-align: center;
+}
+.content_cancel>p{
+    font-weight: 700;
+    color: hsl(224, 23%, 45%);
+}
+.content_cancel>p:hover{
+    color: hsl(225, 90%, 15%);
+    cursor: pointer;
+}
+
+@media (min-width: 1024px){
+    body{
+        background-image: none;
+    }
+    .background{
+        background-image:url(images/pattern-background-desktop.svg) ;
+        background-color: hsl(225, 100%, 98%);
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .main_container{
+        top: 5%;
+        left:50%;
+        transform: translate(-55%);
+        position: absolute;
+        width:300px;
+        height:500px;
+    }
+    .hero_container{
+        height: 40%;
+    }
+    .hero_image{
+        height: 100%;
+    }
+    .content_container
+    {
+        height: 30%;
+    }
+    .content_price_container{
+        height: 15%;
+    }
+    .music_circle{
+        height: 60%;
+    }
+    .fas{
+        padding-top: 11px;
+    }
+    .middle_contents{
+        font-size:0.7rem;
+    }
+    .middle_contents > h3{
+        font-weight: 900;
+    }
+    .correction_btn>p{
+        padding-top: 10px;
+        font-size: 0.7rem;
+    }
+    .content_proceed_btn{
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 0;
+        font-size: 0.9rem;
+    }
+    .content_cancel>p{
+        font-size: 12px;
+    }
+
+}
